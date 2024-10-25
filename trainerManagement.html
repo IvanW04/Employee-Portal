@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/trainerManagement.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">   
+    <link rel="stylesheet" type = "js" href="trainerScript.js">  
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+        <aside>
+            
+            <a href="updateinfo.php">
+                <div class="icons-wrapper">
+                    <img 
+                    class="" 
+                    loading="lazy" 
+                    alt="" 
+                    src="./public/icons.svg" />
+                </div>
+            </a>
+
+            
+    
+            <a href="timeoff.php">
+                <div class="g1970-parent">
+                    <img
+                    class=""
+                    loading="lazy"
+                    alt=""
+                    src="./public/g1970.svg"
+                    />
+                </div>
+            </a>
+            <a href="trainerHP.php">
+                <div>
+                    <img src="./public/home.png" alt="">            
+                </div>
+            </a>
+
+
+
+            
+        </aside>
+
+
+        <section class="current">
+            <div class="Resources">
+                <h3>E-learning Resources</h3>
+                <a href="https://www.indeed.com/career-advice/career-development/train-employees">7 Ways To Train Employees Effectively (Plus Its Importance)</a>
+                <a href="https://www.indeed.com/career-advice/career-development/how-to-write-a-problem-statement">How To Write a Problem Statement (With an Example)</a>
+                <a href="https://www.midwesthr.com/5-easy-steps-to-effectively-train-your-staff-2">5 Easy Steps To Effectively Train Your Staff</a>
+                <a href="https://www.tunley-environmental.com/en/insights/5-key-benefits-of-sustainability-training">5 Key Benefits of Sustainability Training</a>
+            </div>
+        </section>
+    
+
+        <section class="update">
+            <form id="assignForm" action="assignskilldev.php" method="POST" onsubmit = "return validateForm()">
+                <label for="Group_User">Group/User:</label><br>
+                <input type="text" id="Group_User" name="Group_User" placeholder="Enter Group / User" required><br><br>
+                
+                <label for="Task">Task:</label><br>
+                <input type="text" id="Task" name="Task" required><br><br>
+
+                <label for="CompletionDate">Completion Date:</label><br>
+                <input type="date" id="CompletionDate" name="CompletionDate" required><br><br>
+                
+                <input type="submit" value="Assign">
+            </form>
+
+            <div class="gap"></div>
+            
+        </section>
+
+        <div class="blank2"></div>
+
+    </div>
+    
+</body>
+</html>
